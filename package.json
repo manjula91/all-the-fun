@@ -7,7 +7,7 @@
 		"start": "node public/build/server.js -p $PORT",
 		"start-dev": "ENV=development babel-node ./reactor/server.js",
 		"clean": "rimraf ./public/build",
-		"build": "npm run clean && (npm run build-server &) && (npm run build-client &)",
+		"build": "npm run clean && npm run build-server && npm run build-client",
 		"build-server": "webpack --config webpack.server.js --mode=production",
 		"build-client": "webpack --config webpack.client.js --mode=production",
 		"build-dev": "npm run clean && npm run build-client && npm run start-dev",

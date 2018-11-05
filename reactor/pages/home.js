@@ -26,6 +26,7 @@ class Home extends Component {
 	onImageLoad() {
 		this.setState({
 			loadVideo: true,
+			showBanner: false,
 		})
 	}
 
