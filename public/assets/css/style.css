@@ -3150,7 +3150,7 @@ ul.pagination {
 	background-color: #282828;
 	display: table;
 	width: 100%;
-	padding: 20px 0px 20px;
+	padding: 10px 0px 10px;
 }
 .copyright-text > p {
 	font-weight: 400;
@@ -3158,7 +3158,7 @@ ul.pagination {
 	padding: 0;
 	margin-top: 5px;
 	color: #fff;
-	display: inline-block;
+	display: inline;
 }
 .copyright-text > a {
 	display: inline-block;
@@ -3173,7 +3173,7 @@ ul.pagination {
 .code-of-conduct-link {
 	color: #e17d08;
 	margin-top: 3px;
-	padding: 10px;
+	padding: 0 10px;
 }
 .insta-item {
 	display: inline-block;
@@ -3324,7 +3324,6 @@ ul.pagination {
 }
 .content__button a {
 	background: #29a9cc;
-	border: 1px solid rgba(255, 255, 255, 0.1);
 	color: #ffffff;
 	display: inline-block;
 	font-weight: 400;
@@ -3387,6 +3386,32 @@ ul.pagination {
 	
 	.dummy-image {
 		height: 100%;
+	}
+	
+	.about-text .buttons {
+		text-align: center;
+	}
+	
+	.about-area .mr_btn_fill {
+		margin-right: 0;
+	}
+	
+	.footer-top {
+		padding: 62px 0 62px;
+	}
+	
+	.copyright-text > a {
+		margin-left: 0;
+	}
+	
+	.code-of-conduct-link {
+		float: left;
+		padding-left: 0;
+		font-size: 12px;
+	}
+	
+	.footer-contact-info {
+		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 496px) {
@@ -3526,6 +3551,7 @@ div.svglogo {
 	background-size: cover;
 	position: absolute;
 	width: 100%;
+	height: 100%;
 }
 .toggle-text-length {
 	font-size: 10px;

@@ -1,11 +1,11 @@
-const express = require("express")
+const express = require('express')
 const app = express()
-const helmet = require("helmet")
-const path = require("path")
-const redirectSSL = require("redirect-ssl")
-const compression = require("compression")
+const helmet = require('helmet')
+const path = require('path')
+const redirectSSL = require('redirect-ssl')
+const compression = require('compression')
 
-const { renderAppToString } = require("./index")
+const { renderAppToString } = require('./index')
 
 app.use(helmet())
 
@@ -14,10 +14,10 @@ app.use(redirectSSL)
 
 app.use(compression())
 
-if (process.env.ENV === "development") {
-	app.use(express.static(path.join(__dirname, "..", "public")))
+if (process.env.ENV === 'development') {
+	app.use(express.static(path.join(__dirname, '..', 'public')))
 } else {
-	app.use(express.static(path.join(__dirname, "..")))
+	app.use(express.static(path.join(__dirname, '..')))
 }
 
 const requestHandler = (req, res) => {
@@ -26,7 +26,7 @@ const requestHandler = (req, res) => {
 	res.send(stringOutPut)
 }
 
-app.get("/", requestHandler)
+app.get('/', requestHandler)
 
 const server = app.listen(process.env.PORT || 8080, () => {
 	const host = server.address().address

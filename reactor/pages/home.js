@@ -17,16 +17,19 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
-		this.setState({
-			loadSecondFold: true,
-			showBanner: true,
-		})
+		setTimeout(
+			() =>
+				this.setState({
+					loadSecondFold: true,
+					showBanner: true,
+				}),
+			100
+		)
 	}
 
 	onImageLoad() {
 		this.setState({
 			loadVideo: true,
-			showBanner: false,
 		})
 	}
 
@@ -79,10 +82,14 @@ class Home extends Component {
 				</div>
 			</div> */}
 					<div className="video__main">
+						<img
+							className="dummy-image"
+							src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/CABEIAA4AGQMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAGBwgJCv/aAAgBAQAAAACnsymK681yiEyT/8QAFQEBAQAAAAAAAAAAAAAAAAAABQf/2gAIAQIQAAAAvg//xAAVAQEBAAAAAAAAAAAAAAAAAAAFB//aAAgBAxAAAACOKf/EADAQAAEEAQAHBAsBAAAAAAAAAAMBAgQFBgAHERITIUEUUVaWFRYXIiUxMmGBkdTV/9oACAEBAAE/AH41q7KXYHO8T70+Nxk69V4ny/CdE0xrEsD47N3PMLb7yNcpMirWLvKqojXKQ6bHfZVavLvRU0wLCMM4QXtzjDjcm/RktKzYnJFRXPmps/XLry2aeo2I+KsV810f9umt7Jspoaqxp+3AjjLk9Y8j4KGLIBMBj8yG+NAspbvSUSodDNIMeG2Qo7KxIyTOE8keKUGK619Y4oj4NNlNlVVNe60kgiRjjCUsY5kPZJLkDjKWVKlMjs3HneVgFGwIOCMsl5ajI8pubqLTLk13HFZ2MmK8zbKyK9SOGyN2kzDT3jKZrHjY1URrdzeVzHKxiO9neZ+K5nmGy/ytP//EACYRAAIBAQQLAAAAAAAAAAAAAAECAxEABSFBBAcSFBgyQlFhgdH/2gAIAQIBAT8A4jC9THdMxiAILtLGrbVQOWhw819W0nX7Mzil2OmFQu85EgdMBzHf7b//xAAkEQACAAQEBwAAAAAAAAAAAAABAgMEESIAEiFRBQcXIzEycf/aAAgBAwEBPwDplMstH4hDJ0s7mXJaGu0JptQYluW0OGgRptWpT1hEAeN3+4//2Q=="
+						/>
 						{showBanner && (
 							<img
 								className="dummy-image"
-								src="assets/video/still-image-min.png"
+								src="assets/video/still-image-min.jpg"
 								onLoad={this.onImageLoad}
 							/>
 						)}
@@ -170,7 +177,7 @@ class Home extends Component {
 										</div>
 									</div>
 									<div className="content__button show-interest-btn">
-										<a target="_blank" href="http://bit.ly/react_India_show_Interest">
+										<a target="_blank" href="https://goo.gl/forms/CQLSALrg7j4k7fjM2">
 											SHOW YOUR INTEREST
 										</a>
 									</div>
@@ -191,14 +198,18 @@ class Home extends Component {
 											<span className="subtitle">Our</span>
 											<h2 className="f-weight-700 margin-0">Partners</h2>
 											<div className="bordershep" />
-											<img
-												className="partner-img"
-												src="assets/images/partners/react-alicante-logo.png"
-											/>
-											<img
-												className="partner-img"
-												src="assets/images/partners/react-finland-logo.svg"
-											/>
+											<a href="http://reactalicante.es/" target="_blank">
+												<img
+													className="partner-img"
+													src="assets/images/partners/react-alicante-logo.png"
+												/>
+											</a>
+											<a href="https://react-finland.fi/" target="_blank">
+												<img
+													className="partner-img"
+													src="assets/images/partners/react-finland-logo.svg"
+												/>
+											</a>
 										</div>
 										{/* End Heading Title */}
 									</div>
