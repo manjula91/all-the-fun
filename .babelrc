@@ -1,4 +1,22 @@
 {
-	"presets": ["latest"],
-	"plugins": ["transform-object-rest-spread", "transform-react-jsx", "transform-class-properties"]
+	"presets": [
+		["@babel/preset-env", {
+			"targets": {
+				"browsers": [
+					">1%",
+					"not dead",
+					"not ie <= 11",
+					"not op_mini all"
+				],
+				"node": "current"
+			},
+			"useBuiltIns": "usage",
+			"loose": true
+		}],
+		"@babel/preset-react"
+	],
+	"plugins": [
+		"@babel/plugin-proposal-object-rest-spread",
+		"@babel/plugin-proposal-class-properties"
+	]
 }
