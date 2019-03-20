@@ -232,7 +232,7 @@ export default {
           checkbox: true
         },
         {
-          text: '5 Star Hotel Shared Occupancy for 4 Nights (25th-29th September)',
+          text: '5 Star Hotel Single Occupancy for 4 Nights (25th-29th September)',
           checkbox: true
         },
         {
