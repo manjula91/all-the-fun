@@ -5043,16 +5043,6 @@ a[href="/tickets"] {
 	top: 0;
 	font-weight: 500;
 }
-
-.endorsment-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.twitter-tweet-rendered {
-	max-width: 350px !important;
-}
 /* body {
 	margin: 0;
 	font-family: Helvetica, sans-serif;
