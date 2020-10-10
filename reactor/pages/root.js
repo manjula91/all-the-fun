@@ -85,7 +85,7 @@ class Home extends Component {
           </div>
         </div>
         <Header navItems={navItems} />
-        <div className="latest-news-area">
+        <div className="latest-news-area" key={Date.now()}>
           <div className="container">
             <div className="col-md-12">
               {/* Start Heading Title */}
