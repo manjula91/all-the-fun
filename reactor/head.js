@@ -28,7 +28,7 @@ const Head = () => (
 		<meta name="msapplication-TileImage" content="assets/favico/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
 
-		<title>React India - 2020</title>
+		<title>React India - 2021</title>
 		<script type="text/javascript" dangerouslySetInnerHTML={{ __html: `window.__SERVER_TIME__ = ${Date.now()}`}} />
 		<script
 			type="text/javascript"
