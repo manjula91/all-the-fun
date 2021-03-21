@@ -1,6 +1,15 @@
-import React from 'react'
+import React,{ useState, useEffect }  from 'react'
 
-const Footer = () => (
+const Footer = () => {
+
+  const [date, setDate] = useState()
+  const getYear = () => setDate(new Date().getFullYear())
+
+  useEffect(() => {
+    getYear()
+  }, [])
+
+  return (
   <footer className='footer'>
     <div className='footer-top'>
       <div className='container'>
@@ -71,9 +80,9 @@ const Footer = () => (
         <div className='row'>
           <div className='col-md-6'>
             <div className='copyright-text'>
-              <p className='color-white'>Copyright © 2020 All Rights Reserved, Powered by </p>
+              <p className='color-white'>Copyright © {date} All Rights Reserved, Powered by </p>
               <a>
-                <span> React India 2020</span>
+                <span> React India {date}</span>
               </a>
             </div>
           </div>
@@ -109,5 +118,5 @@ const Footer = () => (
     </div>
   </footer>
 )
-
+}
 export default Footer
