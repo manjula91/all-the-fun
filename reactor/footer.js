@@ -73,7 +73,7 @@ const Footer = () => (
             <div className='copyright-text'>
               <p className='color-white'>Copyright © 2020 All Rights Reserved, Powered by </p>
               <a>
-                <span> React India 2020</span>
+                <span> React India 2021</span>
               </a>
             </div>
           </div>
