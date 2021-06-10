@@ -1,12 +1,14 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import AppRouter from "./router";
+import AppRouter from './router';
 
 const Router = () => (
-  <BrowserRouter>
-    <AppRouter />
-  </BrowserRouter>
+  <div className="body-wrap">
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  </div>
 );
 
 export default Router;

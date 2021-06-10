@@ -16,7 +16,7 @@ const navItems = [
   { name: "Speakers", id: "#speakers", scrollToPath: true },
   { name: "Sponsors", id: "#sponsors", scrollToPath: true },
   { name: "Organizers", id: "#organizers", scrollToPath: true },
-  { name: "React India 2020", id: "/", highlight: true }
+  { name: "React India 2021", id: "/conferences/2021", highlight: true }
 ];
 
 const BuyTickets = () => (
