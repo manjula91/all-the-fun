@@ -1,17 +1,18 @@
-import React, { Fragment, Component } from "react";
-import Logo from "./logo";
-import LazyImage from "../lazy-load";
-import { registerLazyImageScrollHandler } from "../lazy-load/scroll-helper";
-import Header from "../header";
-import Partners from "./partners";
-import Organizers from "./organizers";
-import Highlight from "./highlight";
+import React, { Fragment, Component } from 'react';
+import Logo from './logo';
+import LazyImage from '../lazy-load';
+import { registerLazyImageScrollHandler } from '../lazy-load/scroll-helper';
+import Header from '../header';
+import Partners from './partners';
+import Organizers from './organizers';
+import Highlight from './highlight';
 
 const navItems = [
-  { name: "About", id: "#about", scrollToPath: true },
-  { name: "Partners", id: "#partners", scrollToPath: true },
-  { name: "Organizers", id: "#organizers", scrollToPath: true },
-  { name: "React India 2019", id: "/conferences/2019" },
+  { name: 'About', id: '#about', scrollToPath: true },
+  { name: 'Partners', id: '#partners', scrollToPath: true },
+  { name: 'Organizers', id: '#organizers', scrollToPath: true },
+  { name: 'React India 2019', id: '/conferences/2019' },
+  { name: 'React India 2021', id: '/conferences/2021', highlight: true },
 ];
 
 class Home extends Component {
@@ -22,7 +23,7 @@ class Home extends Component {
       loadSecondFold: true,
       showBanner: false,
       loadVideo: false,
-      add: "hello",
+      add: 'hello',
     };
   }
 
@@ -44,24 +45,12 @@ class Home extends Component {
               <Logo />
             </div>
             <div className="m-t-20">
-              <div className="caption__small">
-                <p className="caption__small--para event-date">
-                  <i className="fa fa-calendar" />
-                  REACT INDIA 2021
-                </p>
-                <p className="caption__small--para uppercase event-location">
-                  <i className="flaticon-location-pointer" />
-                  12th - 13th NOVEMBER 2021, INDIA
-                </p>
-              </div>
-
               <h3 className="content__desc">react India</h3>
-              <h2 className="content__title" />
+
+              <h2 className="content__title"> </h2>
               <div className="content__button_impressions">
                 <div>
-                  <a href="mailto:react-india@geekabyte.tech">
-                    EMAIL US FOR SPONSORSHIP
-                  </a>
+                  <a href="/conferences/2021">REMOTE EDITION 2021</a>
                 </div>
               </div>
             </div>
@@ -85,48 +74,6 @@ class Home extends Component {
           </div>
         </div>
         <Header navItems={navItems} />
-        <div className="latest-news-area" key={Date.now()}>
-          <div className="container">
-            <div className="col-md-12">
-              {/* Start Heading Title */}
-              <div className="heading-title text-center">
-                <h2 className="f-weight-700 margin-0">
-                  <i> React India is rescheduled to 2021 </i>
-                </h2>
-                <div className="bordershep" />
-              </div>
-            </div>
-            <div className="col-md-12">
-              <p>
-                Out of concern for the health and safety of every one in the
-                React India community, and in line with the recent orders from
-                the Indian government, React India will not be held in any
-                capacity this year.{" "}
-              </p>
-
-              <p>
-                {" "}
-                Based on current observations, our team has decided it's best to
-                reschedule React India to 2021. Right now, the most important
-                thing that all of us can do is to focus our attention on helping
-                everyone with the new challenges we all face.{" "}
-              </p>
-
-              <p>
-                Take care of yourselves. The new date for our event is{" "}
-                <b> 12 - 13th November 2021 </b>
-              </p>
-              <p>
-                <b>
-                  <i>
-                    We are open for sponsorship for React India 2021, Contact us
-                    at react-india@geekabyte.tech
-                  </i>
-                </b>
-              </p>
-            </div>
-          </div>
-        </div>
         <div class="content">
           <div className="about-area" id="about">
             <div className="container">
@@ -184,12 +131,9 @@ class Home extends Component {
                       {/* Start Heading Title */}
                       <div className="heading-title text-center">
                         <span className="subtitle">BE A PART OF</span>
-                        <h2>React India 2021</h2>
+                        <h2>React India</h2>
                         <div className="bordershep" />
-                        <p>
-                          React India is coming back next year in November 2021.
-                          Stay tuned for more details.
-                        </p>
+                        <p>Stay tuned for further updates!!!</p>
                       </div>
                       {/* End Heading Title */}
                     </div>
