@@ -452,7 +452,7 @@ class Home extends Component {
             </section>
             {/* End MC Area */}
             {/* Start Sponsors Area */}
-            <section className="sponsor_area" id="sponsors">
+            <section className="sponsors_area" id="sponsors">
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-md-8">
@@ -478,7 +478,7 @@ class Home extends Component {
                           key={sponsor.imgUrl}
                           className="col-12 col-md-4 text-center"
                         >
-                          <a className="sponsor-link" href={sponsor.link}>
+                          <a className="sponsors-link" href={sponsor.link}>
                             <LazyImage
                               imgClassName="sponsor-img platinum img-fluid"
                               src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -503,7 +503,7 @@ class Home extends Component {
                           key={sponsor.imgUrl}
                           className="col-6 col-md-3 text-center"
                         >
-                          <a className="sponsor-link" href={sponsor.link}>
+                          <a className="sponsors-link" href={sponsor.link}>
                             <LazyImage
                               imgClassName="sponsor-img golden img-fluid"
                               src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -528,7 +528,7 @@ class Home extends Component {
                           key={sponsor.imgUrl}
                           className="col-4 col-md text-center"
                         >
-                          <a className="sponsor-link" href={sponsor.link}>
+                          <a className="sponsors-link" href={sponsor.link}>
                             <LazyImage
                               imgClassName="sponsor-img silver img-fluid"
                               src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -553,7 +553,7 @@ class Home extends Component {
                           key={sponsor.imgUrl}
                           className="col-4 col-md-2 text-center"
                         >
-                          <a className="sponsor-link" href={sponsor.link}>
+                          <a className="sponsors-link" href={sponsor.link}>
                             <LazyImage
                               imgClassName="sponsor-img bronze img-fluid"
                               src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -578,7 +578,7 @@ class Home extends Component {
                           key={sponsor.imgUrl}
                           className="col-6 col-md-3 text-center"
                         >
-                          <a className="sponsor-link" href={sponsor.link}>
+                          <a className="sponsors-link" href={sponsor.link}>
                             <LazyImage
                               imgClassName="sponsor-img diversity img-fluid"
                               src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -653,7 +653,7 @@ class Home extends Component {
             </section>
             {/* End Ticketing Partner Area */}
             {/* START WIFI SPONSOR*/}
-            <section className="sponsor_area">
+            <section className="sponsors_area">
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-md-8">

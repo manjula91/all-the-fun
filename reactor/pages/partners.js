@@ -1,7 +1,7 @@
 import React from "react";
 import LazyImage from "../lazy-load";
 
-import partners from "../data/2020/partners";
+import partners from "../data/2021/partners";
 
 export default () => (
   <section className="testimonial-area testimonial-area-version-twenty" id="partners">
