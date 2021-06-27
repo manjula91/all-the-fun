@@ -2,7 +2,7 @@ import React, { Fragment, Component, useState } from 'react';
 import Logo from './logo';
 
 import speakersData from '../data/2019/speakers';
-import partners from '../data/2019/partners';
+import partners from '../data/2021/partners';
 import sponsors from '../data/2019/sponsors';
 import { addMap } from './map';
 import LazyImage from '../lazy-load';
@@ -79,7 +79,7 @@ class Home extends Component {
                 </p>
               </div>
               <Countdown
-                date={new Date('2019-09-26T04:00:00.000Z')}
+                date={new Date('2020-11-12T05:30:00.000Z')}
                 renderer={renderer}
               />
               <h3 className="content__desc">react India</h3>
@@ -174,11 +174,11 @@ class Home extends Component {
                         {/* Start Heading Title */}
                         <div className="heading-title text-center">
                           <span className="subtitle">BE A PART OF</span>
-                          <h2>React India 2019</h2>
+                          <h2>React India 2021</h2>
                           <div className="bordershep" />
                           <div className="content__button_impressions">
                             <div>
-                              <a href="#">Call For Papers(Coming soon)</a>
+                              <a target="_blank" href="https://www.notion.so/CALL-FOR-PROPOSALS-REACT-INDIA-REMOTE-EDITION-2021-923f5d9222854f16b37f8b6d2b30f1f8">Call For Proposals</a>
                             </div>
                           </div>
                         </div>
@@ -450,7 +450,7 @@ class Home extends Component {
             )}
             {/* End MC Area */}
             {/* Start Sponsors Area */}
-            <section className="sponsor_area" id="sponsors">
+            <section className="sponsors_area" id="sponsors">
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-md-8">
@@ -461,6 +461,15 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
+                 <div className="row mb-20">
+                    <div className="col-12 text-center">
+                      <div className="title-gold">
+                        <span>
+                          <b>Coming soon...</b>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 {false && (
                   <div className="row mb-20">
                     <div className="col-12 text-center">
@@ -477,7 +486,7 @@ class Home extends Component {
                             key={sponsor.imgUrl}
                             className="col-12 col-md-4 text-center"
                           >
-                            <a className="sponsor-link" href={sponsor.link}>
+                            <a className="sponsors-link" href={sponsor.link}>
                               <LazyImage
                                 imgClassName="sponsor-img platinum img-fluid"
                                 src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -504,7 +513,7 @@ class Home extends Component {
                             key={sponsor.imgUrl}
                             className="col-6 col-md-3 text-center"
                           >
-                            <a className="sponsor-link" href={sponsor.link}>
+                            <a className="sponsors-link" href={sponsor.link}>
                               <LazyImage
                                 imgClassName="sponsor-img golden img-fluid"
                                 src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -531,7 +540,7 @@ class Home extends Component {
                             key={sponsor.imgUrl}
                             className="col-4 col-md text-center"
                           >
-                            <a className="sponsor-link" href={sponsor.link}>
+                            <a className="sponsors-link" href={sponsor.link}>
                               <LazyImage
                                 imgClassName="sponsor-img silver img-fluid"
                                 src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -558,7 +567,7 @@ class Home extends Component {
                             key={sponsor.imgUrl}
                             className="col-4 col-md-2 text-center"
                           >
-                            <a className="sponsor-link" href={sponsor.link}>
+                            <a className="sponsors-link" href={sponsor.link}>
                               <LazyImage
                                 imgClassName="sponsor-img bronze img-fluid"
                                 src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -585,7 +594,7 @@ class Home extends Component {
                             key={sponsor.imgUrl}
                             className="col-6 col-md-3 text-center"
                           >
-                            <a className="sponsor-link" href={sponsor.link}>
+                            <a className="sponsors-link" href={sponsor.link}>
                               <LazyImage
                                 imgClassName="sponsor-img diversity img-fluid"
                                 src={`/assets/images/sponsor/${sponsor.category}/${sponsor.imgUrl}`}
@@ -664,7 +673,7 @@ class Home extends Component {
             {/* End Ticketing Partner Area */}
             {/* START WIFI SPONSOR*/}
             {false && (
-              <section className="sponsor_area">
+              <section className="sponsors_area">
                 <div className="container">
                   <div className="row justify-content-center">
                     <div className="col-md-8">

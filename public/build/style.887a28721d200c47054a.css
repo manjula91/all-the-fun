@@ -1728,16 +1728,16 @@ p {
 	margin-top: 50px;
 }
 
-.sponsor_area {
+.sponsors_area {
 	padding: 94px 0px 100px;
 	background: #f8EFD7;
 }
 
-.sponsor_area .bordershep {
+.sponsors_area .bordershep {
 	margin: 22px auto 25px;
 }
 
-.sponsor_area .title-gold, .sponsor_area .title-silver {
+.sponsors_area .title-gold, .sponsors_area .title-silver {
 	font-size: 24px;
 	line-height: 40px;
 	letter-spacing: 5px;
@@ -1745,16 +1745,16 @@ p {
 	margin-top: 36px;
 }
 
-.sponsor_area .title-silver {
+.sponsors_area .title-silver {
 	margin-top: 30px;
 }
 
-.sponsor_area .mr-btn-fill-2 {
+.sponsors_area .mr-btn-fill-2 {
 	margin-top: 50px;
 	display: inline-block;
 }
 
-.sponsor_area .heading-title {
+.sponsors_area .heading-title {
 	padding: 0 0 36px;
 }
 
@@ -4068,37 +4068,37 @@ ul.pagination {
 
 /* Sponsor Start */
 
-.sponsor_area .sponsor-link {
-	display: block;
+.sponsors_area .sponsors-link {
+	display: block !important;
 }
 
-.sponsor_area .sponsor-img {
+.sponsors_area .sponsor-img {
 	width: 150px;
 	height: auto;
 	margin-top: 35px;
 }
 
-.sponsor_area .sponsor-img.platinum {
+.sponsors_area .sponsor-img.platinum {
 	width: 100%;
 	padding: 0;
 }
 
-.sponsor_area .sponsor-img.golden {
+.sponsors_area .sponsor-img.golden {
 	width: 100%;
 	padding: 0 8%;
 }
 
 
-.sponsor_area .sponsor-img.diversity {
+.sponsors_area .sponsor-img.diversity {
 	width:100%;
 
 }
 
-.sponsor_area .sponsor-img.silver {
+.sponsors_area .sponsor-img.silver {
 	width: 100%;
 	padding: 0 10%;
 }
-.sponsor_area .sponsor-img.bronze {
+.sponsors_area .sponsor-img.bronze {
 	width: 100%;
 	padding: 0 8%;
 }
@@ -4907,24 +4907,24 @@ a[href="/tickets"] {
 	.testimonial-area .partners-wrapper a {
 		display: block;
 	}
-	.sponsor_area .sponsor-img {
+	.sponsors_area .sponsor-img {
 		margin-top: 30px;
 	}
-	.sponsor_area .sponsor-img.platinum {
+	.sponsors_area .sponsor-img.platinum {
 		max-width: 250px;
 		padding: 0 !important;
 	}
-	/* .sponsor_area .sponsor-img.golden {
+	/* .sponsors_area .sponsor-img.golden {
 		width: 150px !important;
 		padding: 0 !important;
 	} */
-	.sponsor_area .sponsor-img.silver{
+	.sponsors_area .sponsor-img.silver{
 		padding: 0;
 	}
-	.sponsor_area .sponsor-img.bronze{
+	.sponsors_area .sponsor-img.bronze{
 		padding: 0 3%;
 	}
-	.sponsor_area .title-gold, .sponsor_area .title-silver {
+	.sponsors_area .title-gold, .sponsors_area .title-silver {
 		font-size: 16px;
 	}
 }
