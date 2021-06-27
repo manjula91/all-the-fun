@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Header from '../header'
 import Checkbox from '../logos/checkbox'
-import tickets from '../data/tickets'
+import tickets from '../data/2019/tickets'
 
 const data = tickets.tickets
 const priceData = tickets.tickets
@@ -53,7 +53,7 @@ export default () => (
     <div className='tickets-container'>
       <div class='tickets-main-head'>
         REACT INDIA 2019 TICKETS EXPLAINED
-      
+
                 <span class='tickets-sub-head'>*All rates are exclusive of taxes, GST 18%</span>
                 <span class="tickets-sub-head">Limited number of Tickets available</span>
       </div>

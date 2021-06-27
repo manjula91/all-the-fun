@@ -521,7 +521,6 @@ p {
 	color: #ff2d55;
 }
 
-
 /* -2. Menu Bar Area Start */
 
 .header .navbar-nav .nav-link {
@@ -705,7 +704,7 @@ p {
 
 
 /* ===================================================
-6. Slider 
+6. Slider
 ======================================================*/
 
 .slider-area {
@@ -933,7 +932,7 @@ p {
 
 .about-area {
 	padding: 94px 0px 99px;
-	
+
 }
 
 .about-text .first-text {
@@ -1466,6 +1465,11 @@ p {
 	margin: 0 auto;
 }
 
+.speaker_area .sk-img .add-border  {
+	border: 1px solid #ecdfdf;
+}
+
+
 .speaker_area .sk-img .img img {
 	width: 100%;
 	height: 100%;
@@ -1554,6 +1558,12 @@ p {
 	z-index: 1;
 }
 
+.testimonial-area-version-twenty {
+	/* background: url(../images/schedule/back-banner.jpg) no-repeat center;
+	background-size: cover; */
+	background-color: #fff;
+}
+
 
 /* .testimonial-area .overlay {
 	position: absolute;
@@ -1571,6 +1581,16 @@ p {
 
 .testimonial-area .partner-img {
 	height: 115px;
+	/* background-color: #fff;
+	border-radius: 10px; */
+	padding: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.testimonial-area .partner-imgzeit {
+	height: 115px;
+	width: 250px;
 	/* background-color: #fff;
 	border-radius: 10px; */
 	padding: 10px;
@@ -1708,16 +1728,16 @@ p {
 	margin-top: 50px;
 }
 
-.sponsor_area {
+.sponsors_area {
 	padding: 94px 0px 100px;
 	background: #f8EFD7;
 }
 
-.sponsor_area .bordershep {
+.sponsors_area .bordershep {
 	margin: 22px auto 25px;
 }
 
-.sponsor_area .title-gold, .sponsor_area .title-silver {
+.sponsors_area .title-gold, .sponsors_area .title-silver {
 	font-size: 24px;
 	line-height: 40px;
 	letter-spacing: 5px;
@@ -1725,16 +1745,16 @@ p {
 	margin-top: 36px;
 }
 
-.sponsor_area .title-silver {
+.sponsors_area .title-silver {
 	margin-top: 30px;
 }
 
-.sponsor_area .mr-btn-fill-2 {
+.sponsors_area .mr-btn-fill-2 {
 	margin-top: 50px;
 	display: inline-block;
 }
 
-.sponsor_area .heading-title {
+.sponsors_area .heading-title {
 	padding: 0 0 36px;
 }
 
@@ -2111,7 +2131,7 @@ section.latest-news-area.main_blog.m-blog-padding {
 
 
 /* ======================================
-21. event page  
+21. event page
 ==========================================*/
 
 .eventSingle {
@@ -2654,7 +2674,6 @@ section.latest-news-area.main_blog.m-blog-padding {
 
 .index_1.pricing .latest-news-area {
 	padding: 94px 0px 70px;
-	background-color: #e9e9e9;
 }
 
 
@@ -3820,6 +3839,49 @@ ul.pagination {
 	text-transform: uppercase;
 }
 
+.count-down {
+	font-size: 20px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.count-down > div {
+	min-width: 65px;
+	background: #1fa178;
+	color: white;
+	border-radius: 5px;
+	margin: 0 5px;
+}
+
+.icon {
+	position: absolute;
+    bottom: 72px;
+    font-size: 16px;
+    color: white !important;
+    background: #1fa178;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+	box-shadow: 0px 0px 1px 1px;
+	z-index: 100;
+}
+
+.navigate-icon {
+    right: 16px;
+}
+
+.guide-icon {
+	left: 16px;
+}
+
+.icon img {
+	height: 40px;
+	width: 40px;
+}
+
 .video__wrapper {
 	position: relative;
 	font-size: 16px;
@@ -3833,7 +3895,7 @@ ul.pagination {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.6);
 	z-index: 1;
 }
 
@@ -3874,13 +3936,17 @@ ul.pagination {
 	height: 200px;
 }
 
-.content__desc {
+.content__desc, .content__sub_desc {
 	font-size: 7.25em !important;
 	font-weight: 600 !important;
 	text-transform: uppercase;
 	font-family: 'Ubuntu', sans-serif;
 	color: #ffffff;
 	margin: 10px;
+}
+
+.content__sub_desc {
+	font-size: 4em !important;
 }
 
 .content__title {
@@ -3930,6 +3996,26 @@ ul.pagination {
 	border-radius: 50px;
 }
 
+.content__button_impressions {
+	text-align: center;
+	margin: auto;
+	margin-top: 35px;
+}
+
+.content__button_impressions a {
+	background-color: #1fa178 !important;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	display: inline-block;
+	font-weight: 400;
+	margin: 0 10px;
+	padding: 0 4px;
+	width: 300px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+}
+
 .content__button a:hover {}
 
 .show-interest-btn a {
@@ -3956,6 +4042,7 @@ ul.pagination {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 
 .toggle-text-length {
@@ -3981,37 +4068,37 @@ ul.pagination {
 
 /* Sponsor Start */
 
-.sponsor_area .sponsor-link {
-	display: block;
+.sponsors_area .sponsors-link {
+	display: block !important;
 }
 
-.sponsor_area .sponsor-img {
+.sponsors_area .sponsor-img {
 	width: 150px;
 	height: auto;
 	margin-top: 35px;
 }
 
-.sponsor_area .sponsor-img.platinum {
+.sponsors_area .sponsor-img.platinum {
 	width: 100%;
 	padding: 0;
 }
 
-.sponsor_area .sponsor-img.golden {
+.sponsors_area .sponsor-img.golden {
 	width: 100%;
 	padding: 0 8%;
 }
 
 
-.sponsor_area .sponsor-img.diversity {
+.sponsors_area .sponsor-img.diversity {
 	width:100%;
 
 }
 
-.sponsor_area .sponsor-img.silver {
+.sponsors_area .sponsor-img.silver {
 	width: 100%;
 	padding: 0 10%;
 }
-.sponsor_area .sponsor-img.bronze {
+.sponsors_area .sponsor-img.bronze {
 	width: 100%;
 	padding: 0 8%;
 }
@@ -4041,6 +4128,10 @@ ul.pagination {
 
 .ticketing_area .ticketing-img.full-width-img {
 	width: 150px;
+}
+
+.cinemetography-img {
+	height: 80px;
 }
 
 
@@ -4408,6 +4499,7 @@ a[href="/tickets"] {
 	max-width: 175px;
     margin: 0 0 10px;
 }
+
 .workshop-item-lg .workshop-item-title {
     font-size: 23px;
     letter-spacing: .65px;
@@ -4449,7 +4541,7 @@ a[href="/tickets"] {
 .schedule_area {
 	padding: 34px 0px 65px;
   }
-  
+
   .schedule-navlink {
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -4458,69 +4550,69 @@ a[href="/tickets"] {
 	color: #ec5d25;
 	cursor: pointer;
   }
-  
+
   .schedule-navlink,
   .schedule-navlink:focus,
   .schedule-navlink:hover {
 	text-decoration: none;
   }
-  
+
   .schedule-navlink:focus,
   .schedule-navlink:hover {
 	outline: 0 !important;
   }
-  
+
   .lead {
 	font-weight: 300;
 	font-size: 21px;
 	line-height: 37px;
   }
-  
+
   .no-padding {
 	padding: 0 !important;
   }
-  
+
   .no-margin {
 	margin: 0 !important;
   }
-  
+
   .dark-section {
 	background: #333;
   }
-  
+
   .text-underline {
 	text-decoration: underline !important;
   }
-  
+
   .text-white {
 	color: #fff;
   }
-  
+
   .text-primary {
 	color: #ec5d25;
   }
-  
+
   .tabs-schedule {
 	margin: 0;
 	padding: 0;
   }
-  
+
   .font-400 {
 	font-weight: 400 !important;
   }
-  
+
   .font-700 {
 	font-weight: 700 !important;
   }
-  
+
   .margin-b-30 {
 	margin-bottom: 30px;
   }
-  
+
   .margin-t-30 {
 	margin-top: 30px;
   }
-  
+
   .margin-b-20 {
 	margin-bottom: 20px;
   }
@@ -4532,22 +4624,22 @@ a[href="/tickets"] {
 	margin-left: -5px;
 	list-style: none;
   }
-  
+
   .list-inline > li {
 	display: inline-block;
   }
-  
+
   .tabs-schedule {
 	border-bottom: 2px solid #f5f5f5;
 	margin-bottom: 40px;
 	margin-left: 0;
   }
-  
+
   .tabs-schedule > li {
 	padding: 0;
 	margin-right: 4px;
   }
-  
+
   .tabs-schedule > li > a {
 	font-size: 24px;
 	display: block;
@@ -4559,7 +4651,7 @@ a[href="/tickets"] {
 	position: relative;
 	line-height: 1.7;
   }
-  
+
   .tabs-schedule > li > a:after {
 	content: '';
 	width: 0;
@@ -4573,7 +4665,7 @@ a[href="/tickets"] {
 	-webkit-transition: width 0.4s;
 	transition: width 0.4s;
   }
-  
+
   .tabs-schedule > li > a span {
 	font-size: 12px;
 	display: block;
@@ -4581,21 +4673,21 @@ a[href="/tickets"] {
 	font-family: #ec5d25;
 	font-weight: 400;
   }
-  
+
   .tabs-schedule > li.active a {
 	color: #ec5d25;
 	cursor: default;
   }
-  
+
   .tabs-schedule > li.active a:after,
   .tabs-schedule > li a:hover:after {
 	width: 100%;
   }
-  
+
   .tabs-schedule > li a:hover {
 	color: #ec5d25;
   }
-  
+
   .event-info {
 	padding-right: 30px;
 	text-align: right;
@@ -4603,13 +4695,13 @@ a[href="/tickets"] {
 	text-transform: uppercase;
 	line-height: 1.6;
   }
-  
+
   .event-info span {
 	display: block;
 	font-size: 16px;
 	color: #555;
   }
-  
+
   .event-info .event-hall {
 	margin-top: 10px;
 	font-style: normal;
@@ -4618,7 +4710,7 @@ a[href="/tickets"] {
 	border-right: 3px solid #ec5d25;
 	background: #f5f5f5;
   }
-  
+
   .event-detail {
 	border-left: 1px solid #ddd;
 	padding-left: 30px;
@@ -4626,7 +4718,7 @@ a[href="/tickets"] {
 	letter-spacing:  .3px;
 	color: #474545;
   }
-  
+
   .event-detail:before {
 	content: '';
 	width: 12px;
@@ -4637,7 +4729,7 @@ a[href="/tickets"] {
 	left: -6px;
 	top: 0;
   }
-  
+
   .event-detail h3 {
 	font-family: Lato, sans-serif;
 	font-style: italic;
@@ -4650,7 +4742,7 @@ a[href="/tickets"] {
   .event-detail h3 a {
 	color: #777;
   }
-  
+
   @media (max-width: 991px) {
 	.image-col {
 	  position: static;
@@ -4693,14 +4785,15 @@ a[href="/tickets"] {
 	  font-size: 10px;
 	}
   }
-  
+
   a.talk-link {
 	color: #777;
   }
   #schedule .img-responsive{
 	display: block;
     max-width: 100%;
-    height: auto;
+	height: auto;
+	border-radius: 50%;
   }
   /* schedule styles */
   @media screen and (max-width: 882px) {
@@ -4710,7 +4803,7 @@ a[href="/tickets"] {
 }
 
 @media screen and (max-width: 767.98px) {
-	
+
 }
 
 @media screen and (max-width: 772px) {
@@ -4740,7 +4833,7 @@ a[href="/tickets"] {
 	.workshop-item-lg .workshop-item-title{
 		width: 100%;
 		text-align: center;
-		margin-bottom: 25px; 
+		margin-bottom: 25px;
 	}
 	/* Schedule Start */
 	.tabs-schedule > li > a{
@@ -4814,24 +4907,24 @@ a[href="/tickets"] {
 	.testimonial-area .partners-wrapper a {
 		display: block;
 	}
-	.sponsor_area .sponsor-img {
+	.sponsors_area .sponsor-img {
 		margin-top: 30px;
 	}
-	.sponsor_area .sponsor-img.platinum {
+	.sponsors_area .sponsor-img.platinum {
 		max-width: 250px;
 		padding: 0 !important;
 	}
-	/* .sponsor_area .sponsor-img.golden {
+	/* .sponsors_area .sponsor-img.golden {
 		width: 150px !important;
 		padding: 0 !important;
 	} */
-	.sponsor_area .sponsor-img.silver{
+	.sponsors_area .sponsor-img.silver{
 		padding: 0;
 	}
-	.sponsor_area .sponsor-img.bronze{
+	.sponsors_area .sponsor-img.bronze{
 		padding: 0 3%;
 	}
-	.sponsor_area .title-gold, .sponsor_area .title-silver {
+	.sponsors_area .title-gold, .sponsors_area .title-silver {
 		font-size: 16px;
 	}
 }
@@ -4859,9 +4952,98 @@ a[href="/tickets"] {
 }
 
 .small {
-	max-height: 200px;	
+	max-height: 200px;
 }
 
 .animate-in {
 	transition: all 1s;
+}
+
+.tab-content .was {
+	opacity: 0.2;
+}
+
+.tab-content .will {
+	opacity: 1;
+}
+
+@keyframes blink {
+
+
+	50% {
+		opacity: 0.25;
+	}
+
+  }
+
+.tab-content .is .event-info{
+	animation: blink 1s step-start 0s infinite;
+}
+
+.tab-content .is .event-detail::before{
+	animation: blink 1s step-start 0s infinite;
+    width: 16px;
+    background: radial-gradient(#ec5d25, transparent);
+    height: 16px;
+    left: -8px;
+    top: -8px;
+}
+
+.tab-content .event-detail .online {
+	display: none;
+	height: 10px;
+	width: 10px;
+	background: #ec5d25;
+	margin-left: 5px;
+}
+
+.tab-content .is .event-detail .online {
+	display: block;
+	animation: blink 1s step-start 0s infinite;
+}
+
+.tab-content .event-detail .name-wrapper {
+	display: flex;
+}
+
+.highlight-area {
+	position: relative;
+}
+
+.thumbnail-container {
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+
+.thumbnail-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.thumbnail-container .center {
+    position: absolute;
+    z-index: 100;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+	color: white;
+	font-size: 80px;
+	cursor: pointer;
+}
+
+.video-container {
+	z-index: 200;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.impression-text {
+	color: white;
+	font-size: 25px;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	font-weight: 500;
 }

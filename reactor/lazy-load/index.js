@@ -18,7 +18,7 @@ class Img extends Component {
 		this.state = {
 			src: props.tinySrc || defaultPlaceHolder,
 			imageRendered: false,
-			alt: `placeholder-${props.alt}`,
+			alt: `placeholder-${props.alt || 'image'}`,
 		}
 
 		this.img = null

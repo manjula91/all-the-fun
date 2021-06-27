@@ -53,7 +53,7 @@ export default function getClientBundleEntryAssets() {
 		}
 	}
 
-	resultCache.path = "build"
+	resultCache.path = "/build"
 
 	return resultCache
 }

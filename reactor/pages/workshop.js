@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "../header";
 
-import workshopData from '../data/workshop'
+import workshopData from '../data/2019/workshop'
 
 const WorkshopItem = data => <div className="workshop" >
   <div className="workshop-item workshop-item-lg">

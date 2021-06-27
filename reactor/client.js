@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom'
 
 import Body from './body'
 
-ReactDOM.hydrate(<Body />, document.querySelector('body'))
+ReactDOM.render(<Body />, document.querySelector('body'))

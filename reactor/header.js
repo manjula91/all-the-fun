@@ -1,88 +1,92 @@
-import React from 'react'
+import React from "react";
 
-const navItems = [
-  { name: 'About', id: '#about' },
-  { name: 'Partners', id: '#partners' },
-  { name: 'Speakers', id: '#speakers' },
-  { name: 'Schedule', id: '#schedule' },
-  { name: 'Workshops', id: '/workshop' },
-  { name: 'Sponsors', id: '#sponsors' },
-  { name: 'Organizers', id: '#organizers' },
-  { name: 'Buy Tickets', id: '/tickets' }
-]
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
-  sticky = 0
-  isSticked = false
-  header = React.createRef()
+  sticky = 0;
+  isSticked = false;
+  header = React.createRef();
   state = {
     checked: false
-  }
+  };
 
   scrollPage = () => {
-    const header = this.header.current
+
+    const header = this.header.current;
     if (window.pageYOffset > this.sticky) {
-      !this.isSticked && header && header.classList.add('header-sticky')
-      this.isSticked = true
+      !this.isSticked && header && header.classList.add("header-sticky");
+      this.isSticked = true;
     } else {
-      this.isSticked && header && header.classList.remove('header-sticky')
-      this.isSticked = false
+      this.isSticked && header && header.classList.remove("header-sticky");
+      this.isSticked = false;
     }
-  }
+  };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.scrollPage)
-    this.sticky = this.header.current.offsetTop
+    window.addEventListener("scroll", this.scrollPage);
+    this.sticky = this.header.current.offsetTop;
   }
 
   scrollToPath = (e, path) => {
-    e.preventDefault()
+    e.preventDefault();
     if (this.props.hardRefresh) {
-      location.href = `/${path}`
+      location.href = `/${path}`;
     } else {
-      this.setState({ checked: false })
-      document.querySelector(path).scrollIntoView({ behavior: 'smooth', block: 'start' })
-      history && history.pushState && history.pushState({}, `/${path}`, `/${path}`)
+      this.setState({ checked: false });
+      document
+        .querySelector(path)
+        .scrollIntoView({ behavior: "smooth", block: "start" });
+      history &&
+        history.pushState &&
+        history.pushState({}, `/${path}`, `/${path}`);
     }
-  }
+  };
 
-  toggleChecked = e => this.setState({ checked: e.target.checked })
+  toggleChecked = e => this.setState({ checked: e.target.checked });
 
   render() {
-    const { checked } = this.state
+    const { checked } = this.state;
+    const { navItems } = this.props;
+
     return (
-      <header ref={this.header} className='header-main'>
-        <a href='/' className="logo">
-          <img src='assets/images/logo-transparent.png' />
+      <header ref={this.header} className="header-main">
+        <a href="/" className="logo">
+          <img src="/assets/images/logo-transparent.png" />
         </a>
         <input
-          className='menu-btn'
+          className="menu-btn"
           checked={checked}
           onChange={this.toggleChecked}
-          type='checkbox'
-          id='menu-btn'
+          type="checkbox"
+          id="menu-btn"
         />
-        <label className='menu-icon' htmlFor='menu-btn'>
-          <span className='navicon' />
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className="navicon" />
         </label>
-        <ul className='menu'>
+        <ul className="menu">
           {navItems.map((item, i) => (
-            <li key={i}>
-              {(item.name !== 'Buy Tickets' && item.name !== 'Workshops') ?
-                <a href={item.id} onClick={e => this.scrollToPath(e, item.id)}>
+            <li key={i} className={item.highlight ? 'menu-highlight' : ''}>
+              {item.hardRefresh ? (
+                <a href={item.id}>{item.name}</a>
+              ) : (
+                <Link
+                  to={item.id}
+                  onClick={
+                    item.scrollToPath ? e => this.scrollToPath(e, item.id) : () => {}
+                  }
+                >
                   {item.name}
-                </a> : <a href={item.id}>
-                  {item.name}
-                </a>}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
       </header>
-    )
+    );
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.scrollPage)
+    window.removeEventListener("scroll", this.scrollPage);
   }
 }
 
@@ -121,4 +125,4 @@ const Header = () => (
 
 */
 
-export default Header
+export default Header;
