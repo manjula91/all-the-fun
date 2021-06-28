@@ -19,6 +19,7 @@ const AppRouter = () => (
       <Route path="/subscribe" component={Subscribe} exact />
       <Route path="/tickets" component={Tickets} exact />
       <Route path="/workshop" component={Workshop} exact />
+      <Route path="/about" component={Root} exact />
     </Switch>
     <Footer />
   </>
