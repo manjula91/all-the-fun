@@ -177,17 +177,9 @@ class Home extends Component {
                           <span className="subtitle">BE A PART OF</span>
                           <h2>React India 2021</h2>
                           <div className="bordershep" />
-                          <div
-                            className="content__button_impressions"
-                            style={{ display: 'none' }}
-                          >
+                          <div className="content__button_impressions">
                             <div>
-                              <a
-                                target="_blank"
-                                href="https://www.notion.so/CALL-FOR-PROPOSALS-REACT-INDIA-REMOTE-EDITION-2021-923f5d9222854f16b37f8b6d2b30f1f8"
-                              >
-                                Call For Proposals
-                              </a>
+                            <a target="_blank" href="https://bit.ly/cfp-reactindia2021">Call For Proposals</a>
                             </div>
                           </div>
                         </div>
