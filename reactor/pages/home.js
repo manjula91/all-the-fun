@@ -12,6 +12,7 @@ import Countdown from "react-countdown-now";
 
 const navItems = [
   { name: "About", id: "#about" },
+  { name: "Blog", id: 'https://blog.reactindia.io', hardRefresh: true },
   { name: "Partners", id: "#partners", scrollToPath: true },
   { name: "Speakers", id: "#speakers", scrollToPath: true },
   { name: "Sponsors", id: "#sponsors", scrollToPath: true },

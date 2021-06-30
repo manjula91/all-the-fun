@@ -9,6 +9,7 @@ import Highlight from './highlight';
 
 const navItems = [
   { name: 'About', id: '#about', scrollToPath: true },
+  { name: 'Blog', id: 'https://blog.reactindia.io', hardRefresh: true },
   { name: 'Partners', id: '#partners', scrollToPath: true },
   { name: 'Organizers', id: '#organizers', scrollToPath: true },
   { name: 'React India 2019', id: '/conferences/2019' },
