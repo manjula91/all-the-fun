@@ -1,11 +1,11 @@
 import React, { Fragment, Component } from 'react';
-import Logo from './logo';
-import LazyImage from '../lazy-load';
-import { registerLazyImageScrollHandler } from '../lazy-load/scroll-helper';
-import Header from '../header';
-import Partners from './partners';
-import Organizers from './organizers';
-import Highlight from './highlight';
+import Logo from 'logos/logo';
+import LazyImage from 'reactor/lazy-load';
+import { registerLazyImageScrollHandler } from 'reactor/lazy-load/scroll-helper';
+import Header from 'components/header';
+import Partners from 'components/partners';
+import Organizers from 'components/organizers';
+import Highlight from 'components/highlight';
 
 const navItems = [
   { name: 'About', id: '#about', scrollToPath: true },
