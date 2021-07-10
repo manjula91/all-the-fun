@@ -58,6 +58,7 @@
 		"@babel/preset-react": "^7.0.0",
 		"@babel/runtime": "^7.3.1",
 		"babel-loader": "^8.0.5",
+		"babel-plugin-module-resolver": "^4.1.0",
 		"css-loader": "^2.1.0",
 		"ignore-loader": "^0.1.2",
 		"kill-port": "^1.6.1",

@@ -1,13 +1,13 @@
 import React, { Fragment, Component, useState } from 'react';
-import Logo from './logo';
+import Logo from 'logos/logo';
 
-import speakersData from '../data/2019/speakers';
-import partners from '../data/2021/partners';
-import sponsors from '../data/2019/sponsors';
-import { addMap } from './map';
-import LazyImage from '../lazy-load';
-import { registerLazyImageScrollHandler } from '../lazy-load/scroll-helper';
-import Header from '../header';
+import speakersData from 'data/2019/speakers';
+import partners from 'data/2021/partners';
+import sponsors from 'data/2019/sponsors';
+import { addMap } from 'components/map';
+import LazyImage from 'reactor/lazy-load';
+import { registerLazyImageScrollHandler } from 'reactor/lazy-load/scroll-helper';
+import Header from 'components/header';
 import Countdown from 'react-countdown-now';
 
 const navItems = [

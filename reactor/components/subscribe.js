@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-import Header from '../header'
+import Header from './header'
 
 const text = `
 <!-- Begin Mailchimp Signup Form -->
