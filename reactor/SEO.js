@@ -12,7 +12,7 @@ export const ContactPoint = () => (
 		"url": "${SITE}",
 		"logo": "${SITE}/assets/images/logo.png",
 		"contactPoint": [
-		{ 
+		{
 			"@type": "ContactPoint",
 			"telephone": "${CONTACT_NUMBERS[0]}",
 			"contactType": "customer service",
@@ -64,9 +64,8 @@ export const Analytics = () => (
 	/>
 )
 
-export const description = `Do you want to learn about React and React Native?
-Then you shouldn't miss React India - Goa next September! 
-You will have the opportunity to improve your developer skills and meet people from around the world, 
-while enjoying the beaches of Goa`
+export const description = `Do you want to learn about React & React Native?
+Then you shouldn't miss React India - Remote edition happening in November 2021!
+You will have the opportunity to improve your developer skills and meet people from around the world.`
 
-export const keywords = "React, React Native, React India, React India 2019, React India in Goa"
+export const keywords = "React, React Native, React India, React India 2021, React India Remote edition"
